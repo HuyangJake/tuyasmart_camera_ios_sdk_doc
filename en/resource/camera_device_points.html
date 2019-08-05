@@ -1,0 +1,731 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Data Points · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="lowpoer_doorbell.html" />
+    
+    
+    <link rel="prev" href="camera_function.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="rapid_integration.html">
+            
+                <a href="rapid_integration.html">
+            
+                    
+                    Rapid Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preparation_work.html">
+            
+                <a href="preparation_work.html">
+            
+                    
+                    Preparation Work
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="initiate_sdk.html">
+            
+                <a href="initiate_sdk.html">
+            
+                    
+                    Initiate SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="camera_function.html">
+            
+                <a href="camera_function.html">
+            
+                    
+                    Camera Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="camera_device_points.html">
+            
+                <a href="camera_device_points.html">
+            
+                    
+                    Data Points
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="lowpoer_doorbell.html">
+            
+                <a href="lowpoer_doorbell.html">
+            
+                    
+                    Lowpower Doorbell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="required_permission.html">
+            
+                <a href="required_permission.html">
+            
+                    
+                    Required Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="qrcode_network_configuration.html">
+            
+                <a href="qrcode_network_configuration.html">
+            
+                    
+                    QRCode Network Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="version_record.html">
+            
+                <a href="version_record.html">
+            
+                    
+                    Change Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="FAQ_en.html">
+            
+                <a href="FAQ_en.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Data Points</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="camera-function-data-points">Camera function data-points</h1>
+<p><strong>&#x3010;Description&#x3011;</strong></p>
+<p>Tuya smart camera supports various function data-points. The interaction between devices and APP is realized through standardized function settings. Certain return data of the device send notifications to APP by asynchronous messaging.</p>
+<h3 id="camera-device-standardized-features">Camera device standardized features</h3>
+<p>The details defined in <code>TuyaSmartCameraDPManager.h</code>.</p>
+<ul>
+<li>Device basic features setting</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Data-point</th>
+<th>Data type</th>
+<th style="text-align:center">value</th>
+<th>Description</th>
+<th>Feature definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TuyaSmartCameraBasicIndicatorDPName</td>
+<td>BOOL</td>
+<td style="text-align:center">YES&#xFF1A; turn on indicator under normal state                                 NO: turn off indicator under normal state</td>
+<td>Status indicator</td>
+<td>Turn on/off device indicator under normal state: avoid light pollution at night. Indicator needs to be turned on during wifi configuration process or device is abnormal.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraBasicFlipDPName</td>
+<td>BOOL</td>
+<td style="text-align:center">YES: flip               NO: normal status</td>
+<td>Screen flip</td>
+<td>Turn on/off screen vertical flip: adjust screen direction in the case when the device is upside down.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraBasicOSDDPName</td>
+<td>BOOL</td>
+<td style="text-align:center">YES: OSD appears         NO: OSD disappears</td>
+<td>Time watermark</td>
+<td>Turn on/off time watermark in live view mode.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraBasicPrivateDPName</td>
+<td>BOOL</td>
+<td style="text-align:center">YES: private mode turned on             NO: private mode turned off</td>
+<td>Private mode</td>
+<td>Turn on/off private mode: no video&amp;audio stream collecting, the device has no live view and playback.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraBasicNightvisionDPName</td>
+<td>enum</td>
+<td style="text-align:center">Auto, 1: Off, 2: On</td>
+<td>IR night vision</td>
+<td>Select IR night vision status On/Off/Auto.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraBasicPIRDPName</td>
+<td>enum</td>
+<td style="text-align:center">0&#xFF1A;off, 1: low sensitivity, 2: medium sensitivity, 3: high sensitivity</td>
+<td>PIR switch and sensitivity</td>
+<td>Adjust PIR status: Off/low sensitivity/medium sensitivity/ high sensitivity.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Motion detection alarm</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Data-point</th>
+<th>Data type</th>
+<th>value</th>
+<th>Description</th>
+<th>Feature definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TuyaSmartCameraMotionDetectDPName</td>
+<td>BOOL</td>
+<td>YES: motion detection alarm turned on               NO: motion detection alarm turned off</td>
+<td>Motion detection alarm switch</td>
+<td>Turn on/off motion detection alarm. After turning on: device needs to report messages to server once movement is detected under suitable conditions.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraMotionSensitivityDPName</td>
+<td>enum</td>
+<td>0: low,1:medium, 2:high</td>
+<td>motion detection sensitivity setting</td>
+<td>Set motion detection alarm sensitivity.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Sound detection alarm</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Data-point</th>
+<th>Data type</th>
+<th>value</th>
+<th>Description</th>
+<th>Feature definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TuyaSmartCameraDecibelDetectDPName</td>
+<td>BOOL</td>
+<td>YES: sound detection alarm turned on              NO: sound detection alarm turned off</td>
+<td>Sound detection alarm switch</td>
+<td>Turn on/off sound detection alarm. After turning on: device needs to report messages to server once sound is detected under suitable conditions.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraDecibelSensitivityDPName</td>
+<td>enum</td>
+<td>low,1:medium, 2:high</td>
+<td>sound detection sensitivity setting</td>
+<td>Set sound detection alarm sensitivity.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Memory card and local video recording management</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Data-point</th>
+<th>Data type</th>
+<th>value</th>
+<th>Description</th>
+<th>Feature definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TuyaSmartCameraSDCardStatusDPName</td>
+<td>enum(int)</td>
+<td>1: normal, 2: abnormal (SD card is broken or under wrong format), 3: insufficient space, 4: formatting, 5: no SD card inserted</td>
+<td>Memory card status</td>
+<td>Device reports current SD card status to the cloud, including SD card status: normal /abnormal /insufficient space etc.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraSDCardStorageDPName</td>
+<td>string</td>
+<td>JSON string</td>
+<td>Memory card capacity info research</td>
+<td>Report memory card current capacity status/ capacity used/ capacity left.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraSDCardFormatDPName</td>
+<td>BOOL</td>
+<td></td>
+<td>Memory card formatting</td>
+<td>Initial formatting instruction, report current memory card formatting process.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraSDCardFormatStateDPName</td>
+<td>NSInteger</td>
+<td>Positive number of formatting process 0-100</td>
+<td>current memory card formatting process</td>
+<td>Positive number of formatting process: 100 means formatting success.  Error: -2000: SD card is formatting, -2001: SD card formatting.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraSDCardRecordDPName</td>
+<td>BOOL</td>
+<td>YES: local video recording turned on        NO: local video recording turned off</td>
+<td>local video recording switch</td>
+<td>Trun on/off SD card record: device will not record video and save to SD card after turning off the switch.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraRecordModeDPName</td>
+<td>enum</td>
+<td>1: event record (start to record once movement is detected)                             2: continuous record</td>
+<td>local video recording mode select</td>
+<td>select local video recording mode, support event record and continuous record.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>PTZ functions</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Data-point</th>
+<th>Data type</th>
+<th>value</th>
+<th>Description</th>
+<th>Feature definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TuyaSmartCameraPTZControlDPName</td>
+<td>enum</td>
+<td>0: left, 2: right, 4: down, 6: up</td>
+<td>PTZ direction  control</td>
+<td>Use to control the PTZ, and adjust direction.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraPTZStopDPName</td>
+<td>BOOL</td>
+<td></td>
+<td>Stop PTZ</td>
+<td>PTZ stop moving, no parameters.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Battery powered product features</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Data-point</th>
+<th>Data type</th>
+<th>value</th>
+<th>Description</th>
+<th>Feature definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TuyaSmartCameraWirelessElectricityDPName</td>
+<td>NSInteger</td>
+<td>Device power, report 0-100 integer</td>
+<td>Battery and device status info</td>
+<td>Device reports current battery power, and reports when power changes. Device sends messages to cloud current device sleep/wake status.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraWirelessLowpowerDPName</td>
+<td>NSInteger</td>
+<td>value</td>
+<td>Low power alarm value</td>
+<td>Users can set the value in App. Alarm regulation: dp145&#x2264;dp147.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraWirelessBatteryLockDPName</td>
+<td>BOOL</td>
+<td>YES: locked    NO: unlocked</td>
+<td>Battery lock</td>
+<td>Turn on/off battery lock control.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraWirelessPowerModeDPName</td>
+<td>enum</td>
+<td>0: Battery power supply, 1: Plug power supply</td>
+<td>Device power supply method</td>
+<td>Device reports current power supply status. Report once power supply method changes.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraWirelessAwakeDPName</td>
+<td>BOOL</td>
+<td>YES: the device is awaking. NO: the device is sleeping.</td>
+<td>device awake state</td>
+<td>Device reports current state is awaking, report NO when sleeping, report YES when awaking.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="device-standardized-feature-method-call">Device standardized feature method call</h3>
+<p>TuyaSmartCameraDPManager provides device info communication ability, control orders issue, reach current data-points info</p>
+<pre><code class="lang-objective-c">// init TuyaSmartCameraDPManager instance with device id
+TuyaSmartCameraDPManager *dpManager = [[TuyaSmartCameraDPManager alloc] initWithDeviceId:devId];
+</code></pre>
+<h4 id="listener">Listener</h4>
+<p> TuyaSmartCameraDPObserver protocol provides listener device info data receiving.</p>
+<pre><code class="lang-objective-c">// dpsData is the data that device reports&#x3002;get the value of DP though [dpsData objectForKey:TuyaSmartCameraDPKey]&#x3002;
+- (void)cameraDPDidUpdate:(TuyaSmartCameraDPManager *)manager dps:(NSDictionary *)dpsData;
+</code></pre>
+<h4 id="data-point-support-or-not">Data-point support or not</h4>
+<p><strong>&#x3010;Description&#x3011;</strong></p>
+<p>Judge whether the device supports the data-point. Call data issues/data research will fail if the device dose not support certain data-point. </p>
+<pre><code class="lang-objective-c">- (BOOL)isSupportDP:(TuyaSmartCameraDPKey)dpName;
+</code></pre>
+<p>&#x3010;Method call&#x3011;</p>
+<pre><code class="lang-objective-c">BOOL isSupportDpBasicFlip = [self.dpManager isSupportDP:TuyaSmartCameraBasicFlipDPName];
+</code></pre>
+<h4 id="data-publish">Data publish</h4>
+<p><strong>&#x3010;Description&#x3011;</strong></p>
+<p>Send message through LAN or cloud</p>
+<p><strong>&#x3010;Method call&#x3011;</strong></p>
+<pre><code class="lang-objective-c">// the type of data is id, if the dp value is int or BOOL, need packed as NSNumber
+[self.dpManager setValue:@(YES) forDP:TuyaSmartCameraBasicFlipDPName success:^(id result) {
+        // success, result is the reponse of device, usually as same as the publish data
+} failure:^(NSError *error) {
+        // failed
+}];
+</code></pre>
+<h4 id="data-research">Data research</h4>
+<p><strong>&#x3010;Description&#x3011;</strong></p>
+<p>Obtain data-point info through cache, if has no cache, will push command to device for query the value.</p>
+<pre><code class="lang-objective-c">// get the value of dp from app cache, most of the dps could get the latest value, device will auto report
+- (id)valueFortDP:(TuyaSmartCameraDPKey)dpName;
+// publish the query command for dp
+- (void)valueForDP:(TuyaSmartCameraDPKey)dpName success:(TYSuccessID)success failure:(TYFailureError)failure;
+</code></pre>
+<p><strong>&#x3010;Method call&#x3011;</strong></p>
+<p>Value data-point research</p>
+<pre><code class="lang-objective-c">TuyaSmartCameraRecordMode mode = [self.dpManager valueForDP:TuyaSmartCameraRecordModeDPName];
+
+[self.dpManager valueForDP:TuyaSmartCameraSDCardStorageDPName success:^(id result) {
+    // succes, result is the value of the dp&#x3002;
+} failure:^(NSError *error) {
+    // failed
+}];
+</code></pre>
+<h3 id="others">Others</h3>
+<p>the <code>enum</code> of the dp list in the header, actually is the NSString enum, there defines the constant reference in <code>TuyaSmartCameraDPManager.h</code>.</p>
+<pre><code class="lang-objective-c">typedef NSString * TuyaSmartCameraNightvision NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * TuyaSmartCaemraPIR NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * TuyaSmartCameraMotion NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * TuyaSmartCameraDecibel NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * TuyaSmartCameraRecordMode NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * TuyaSmartCameraPTZDirection NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * TuyaSmartCameraPowerMode NS_EXTENSIBLE_STRING_ENUM;
+</code></pre>
+<p>How to use:</p>
+<pre><code class="lang-objective-c">/// nightvision state has three values.
+/// TuyaSmartCameraNightvisionAuto,TuyaSmartCameraNightvisionOff,TuyaSmartCameraNightvisionOn
+[self.dpManager setValue:TuyaSmartCameraNightvisionOn forDP:TuyaSmartCameraBasicNightvisionDPName success:^(id result) {
+
+} failure:^(NSError *error) {
+
+}];
+</code></pre>
+<h4 id="memory-card">Memory card</h4>
+<p>If device support sd card, could get the sd card status and format sd card.</p>
+<pre><code class="lang-objective-c">// sd card state
+typedef NS_ENUM(NSUInteger, TuyaSmartCameraSDCardStatus) {
+    TuyaSmartCameraSDCardStatusNormal = 1,            // sd card working
+    TuyaSmartCameraSDCardStatusException = 2,        // exception, can not get info
+    TuyaSmartCameraSDCardStatusMemoryLow = 3,       // low memory
+    TuyaSmartCameraSDCardStatusFormatting = 4,        // sd card is formatting
+    TuyaSmartCameraSDCardStatusNone = 5             // not detected sd card
+};
+
+// get sd card status
+TuyaSmartCameraSDCardStatus status = [[self.dpManager valueForDP:TuyaSmartCameraSDCardStatusDPName] integerValue];
+
+// get sd card storage
+[self.dpManager valueForDP:TuyaSmartCameraSDCardStorageDPName success:^(id result) {
+    // result is string, total space&#xFF0C;used space&#xFF0C;free space separated by &quot;|&quot;, the unit is kB.
+    NSArray *components = [result componentsSeparatedByString:@&quot;|&quot;];
+    if (components.count &lt; 3) {
+        // exception
+        return;
+    }
+    NSString *total = [components objectAtIndex:0];
+    NSString *used = [components objectAtIndex:1];
+    NSString *free = [components objectAtIndex:2];
+    // other code
+} failure:^(NSError *error) {
+    // failed
+}];
+
+// format sd card
+[self.dpManager setValue:@(YES) forDP:TuyaSmartCameraSDCardFormatDPName success:^(id result) {
+    // sd card is formatting
+} failure:^(NSError *error) {
+    // failed
+}];
+
+// get the progress of sd card formatting
+[self.dpManager setValue:@(YES) forDP:TuyaSmartCameraSDCardFormatStateDPName success:^(id result) {
+    NSInteger progress = [result integerValue];
+} failure:^(NSError *error) {
+    // failed
+}];
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="camera_function.html" class="navigation navigation-prev " aria-label="Previous page: Camera Function">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="lowpoer_doorbell.html" class="navigation navigation-next " aria-label="Next page: Lowpower Doorbell">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Data Points","level":"1.6","depth":1,"next":{"title":"Lowpower Doorbell","level":"1.7","depth":1,"path":"resource/lowpoer_doorbell.md","ref":"resource/lowpoer_doorbell.md","articles":[]},"previous":{"title":"Camera Function","level":"1.5","depth":1,"path":"resource/camera_function.md","ref":"resource/camera_function.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"resource/camera_device_points.md","mtime":"2019-08-05T12:24:13.501Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-05T12:25:07.726Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

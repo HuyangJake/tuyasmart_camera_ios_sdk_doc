@@ -1,0 +1,759 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>云存储 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="version_record.html" />
+    
+    
+    <link rel="prev" href="qrcode_network_configuration.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="rapid_integration.html">
+            
+                <a href="rapid_integration.html">
+            
+                    
+                    快速集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preparation_work.html">
+            
+                <a href="preparation_work.html">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="initiate_sdk.html">
+            
+                <a href="initiate_sdk.html">
+            
+                    
+                    初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="camera_function.html">
+            
+                <a href="camera_function.html">
+            
+                    
+                    摄像头功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="camera_device_points.html">
+            
+                <a href="camera_device_points.html">
+            
+                    
+                    设备功能点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="lowpoer_doorbell.html">
+            
+                <a href="lowpoer_doorbell.html">
+            
+                    
+                    低功耗门铃
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="required_permission.html">
+            
+                <a href="required_permission.html">
+            
+                    
+                    需要的权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="qrcode_network_configuration.html">
+            
+                <a href="qrcode_network_configuration.html">
+            
+                    
+                    二维码配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="CloudStorage.html">
+            
+                <a href="CloudStorage.html">
+            
+                    
+                    云存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="version_record.html">
+            
+                <a href="version_record.html">
+            
+                    
+                    版本记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="FAQ_zh.html">
+            
+                <a href="FAQ_zh.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >云存储</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4E91;&#x5B58;&#x50A8;">&#x4E91;&#x5B58;&#x50A8;</h1>
+<h2 id="&#x4E91;&#x5B58;&#x50A8;&#x8D2D;&#x4E70;">&#x4E91;&#x5B58;&#x50A8;&#x8D2D;&#x4E70;</h2>
+<h3 id="sdk&#x96C6;&#x6210;">SDK&#x96C6;&#x6210;</h3>
+<p>&#x4E91;&#x5B58;&#x50A8;&#x8D2D;&#x4E70;&#x901A;&#x9053;&#x5982;&#x679C;&#x8981;&#x8D70;&#x6D82;&#x9E26;&#x5E73;&#x53F0;&#xFF0C;&#x9700;&#x8981;&#x5F15;&#x5165;&#x4E91;&#x5B58;&#x50A8;&#x8D2D;&#x4E70;&#x9875;&#x9762;&#x7684; SDK&#xFF0C;&#x5728; podfile &#x4E2D;&#x589E;&#x52A0;&#x4E0B;&#x9762;&#x4EE3;&#x7801;</p>
+<pre><code class="lang-ruby">platform <span class="hljs-symbol">:ios</span>, <span class="hljs-string">&apos;9.0&apos;</span>
+target <span class="hljs-string">&apos;Your_Target&apos;</span> <span class="hljs-keyword">do</span>
+  pod <span class="hljs-string">&apos;TYCameraCloudServicePanelSDK&apos;</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x7136;&#x540E;&#x5728;&#x5DE5;&#x7A0B;&#x4E3B;&#x76EE;&#x5F55;&#x4E0B;&#x6267;&#x884C;<code>pod update</code>&#x3002;</p>
+<h3 id="&#x521D;&#x59CB;&#x5316;">&#x521D;&#x59CB;&#x5316;</h3>
+<p>&#x4E91;&#x5B58;&#x50A8;&#x8D2D;&#x4E70;&#x670D;&#x52A1; SDK &#x7684;&#x521D;&#x59CB;&#x5316;&#x9700;&#x8981;&#x4F20;&#x5165;&#x6D82;&#x9E26;&#x5E73;&#x53F0;&#x4E0A;&#x6CE8;&#x518C; APP &#x7684;&#x6E20;&#x9053;&#x6807;&#x8BC6;&#x7B26;&#x3002;&#x63A5;&#x53E3;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-objective-c">/**
+ &#x521D;&#x59CB;&#x5316;SDK&#xFF0C;&#x9700;&#x8981;&#x5728; TuyaSmartSDK &#x521D;&#x59CB;&#x5316;&#x540E;&#x8C03;&#x7528;
+
+ @param scheme iot&#x5E73;&#x53F0;&#x4E0A;&#x7684;&#x6E20;&#x9053;&#x6807;&#x8BC6;&#x7B26;
+ */
++ (void)setupWithAppScheme:(NSString *)scheme;
+</code></pre>
+<p>&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x5728; APP &#x542F;&#x52A8;&#x65F6;&#xFF0C;TuyaSmartHomeKit &#x521D;&#x59CB;&#x5316;&#x4E4B;&#x540E;&#x8C03;&#x7528;&#x3002;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-objective-c">- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [[TuyaSmartSDK sharedInstance] startWithAppKey:@&quot;your_appKey&quot; secretKey:@&quot;your_appSecret&quot;];
+    [TYCameraCloudServicePanelSDK setupWithAppScheme:@&quot;your_scheme&quot;];
+}
+</code></pre>
+<h3 id="&#x7528;&#x6237;&#x72B6;&#x6001;&#x540C;&#x6B65;">&#x7528;&#x6237;&#x72B6;&#x6001;&#x540C;&#x6B65;</h3>
+<p>&#x5728;&#x7528;&#x6237;&#x767B;&#x5F55;/&#x767B;&#x51FA;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9700;&#x8981;&#x8C03;&#x7528;&#x4E00;&#x4E0B;&#x63A5;&#x53E3;&#x540C;&#x6B65;&#x7528;&#x6237;&#x767B;&#x5F55;&#x72B6;&#x6001;&#xFF1A;</p>
+<pre><code class="lang-objective-c">/**
+ &#x5728;&#x7528;&#x6237;&#x767B;&#x5F55;&#x767B;&#x51FA;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9700;&#x8981;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x540C;&#x6B65;&#x7528;&#x6237;&#x72B6;&#x6001;
+ */
++ (void)userStateChanged;
+</code></pre>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-objective-c">- (void)login {
+    [[TuyaSmartUser sharedInstance] loginByPhone:@&quot;countryCode&quot; phoneNumber:@&quot;phoneNumber&quot; password:@&quot;password&quot; success:^{
+        [TYCameraCloudServicePanelSDK userStateChanged];
+    } failure:^(NSError *error) {
+        // failed
+    }];
+}
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x4E91;&#x5B58;&#x50A8;&#x8D2D;&#x4E70;&#x9875;&#x9762;">&#x83B7;&#x53D6;&#x4E91;&#x5B58;&#x50A8;&#x8D2D;&#x4E70;&#x9875;&#x9762;</h3>
+<p>&#x4E91;&#x5B58;&#x50A8;&#x8D2D;&#x4E70;&#x9875;&#x9762;&#x662F; H5 &#x9875;&#x9762;&#xFF0C;&#x7531;&#x4E8E;&#x9700;&#x8981;&#x4ECE;&#x4E91;&#x7AEF;&#x8BF7;&#x6C42;&#x5BF9;&#x5E94;&#x7684;&#x9875;&#x9762;&#x5730;&#x5740;&#xFF0C;&#x6240;&#x4EE5;&#x83B7;&#x53D6;&#x4E91;&#x5B58;&#x50A8;&#x9875;&#x9762;&#x7684;&#x63A5;&#x53E3;&#x662F;&#x5F02;&#x6B65;&#x7684;&#xFF0C;&#x5E76;&#x9700;&#x8981;&#x4F20;&#x5165;&#x5BF9;&#x5E94;&#x8BBE;&#x5907;&#x7684; <code>TuyaSmartDeviceModel</code>&#x5BF9;&#x8C61;&#x3002;&#x63A5;&#x53E3;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-objective-c">/**
+ &#x83B7;&#x53D6;&#x4E91;&#x5B58;&#x50A8;&#x8D2D;&#x4E70;&#x9875;&#x9762;
+
+ @param deviceModel &#x8BBE;&#x5907;
+ @param success &#x6210;&#x529F;&#x56DE;&#x8C03;
+ @param failure &#x5931;&#x8D25;&#x56DE;&#x8C03;
+ */
++ (void)cloudServicePanelWithDevice:(TuyaSmartDeviceModel *)deviceModel
+                            success:(void(^)(UIViewController *vc))success
+                            failure:(void(^)(NSError *error))failure;
+</code></pre>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-objective-c">- (void)gotoCloudServicePanelWithDevice:(TuyaSmartDeviceModel *)deviceModel {
+    [TYCameraCloudServicePanelSDK cloudServicePanelWithDevice:deviceModel success:^(UIViewController *vc) {
+        [self.navigationController pushViewController:vc animated:YES];
+    } failure:^(NSError *error) {
+        NSLog(@&quot;Error: %@&quot;, error);
+    }];
+}
+</code></pre>
+<h2 id="&#x4E91;&#x5B58;&#x50A8;&#x529F;&#x80FD;">&#x4E91;&#x5B58;&#x50A8;&#x529F;&#x80FD;</h2>
+<p>&#x4E91;&#x5B58;&#x50A8;&#x76F8;&#x5173;&#x529F;&#x80FD;&#x901A;&#x8FC7; <code>TuyaSmartCameraKit&#x4E2D;</code> &#x7684; <code>TuyaSmartCloudManager</code>&#x7C7B;&#x64CD;&#x4F5C;&#x3002;</p>
+<h3 id="&#x521D;&#x59CB;&#x5316;">&#x521D;&#x59CB;&#x5316;</h3>
+<p>&#x4E91;&#x5B58;&#x50A8;&#x9ED8;&#x8BA4;&#x662F;&#x9759;&#x97F3;&#x5F00;&#x59CB;&#x64AD;&#x653E;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x64AD;&#x653E;&#x65F6;&#x5F00;&#x542F;&#x58F0;&#x97F3;&#xFF0C;&#x53EF;&#x5728;&#x521D;&#x59CB;&#x5316;&#x65F6;&#xFF0C;&#x8BBE;&#x7F6E;&#x9759;&#x97F3;&#x72B6;&#x6001;&#x4E3A; NO&#x3002;&#x4E91;&#x5B58;&#x50A8;&#x64AD;&#x653E;&#x65F6;&#xFF0C;&#x89C6;&#x9891;&#x5E27;&#x6570;&#x636E;&#x548C;&#x5E27;&#x5934;&#x4FE1;&#x606F;&#x90FD;&#x5C06;&#x7528;&#x8FC7;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;&#x56DE;&#x8C03;&#x3002;</p>
+<pre><code class="lang-objective-c">// self.devId = @&quot;xxxxx&quot;;
+- (void)viewDidLoad {
+    _cloudManager = [[TuyaSmartCloudManager alloc] initWithDeviceId:self.devId];
+    [_cloudManager enableMute:NO success:nil failure:nil];
+    _cloudManager.delegate = self;
+}
+</code></pre>
+<h3 id="&#x4EE3;&#x7406;">&#x4EE3;&#x7406;</h3>
+<p>&#x4E91;&#x5B58;&#x50A8;&#x4EE3;&#x7406;&#x63A5;&#x53E3;&#x4E3A;<code>TuyaSmartCloudManagerDelegate</code>&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x6BCF;&#x4E00;&#x5E27;&#x89C6;&#x9891;&#x7684;YUV&#x6570;&#x636E;&#x548C;&#x5E27;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x81EA;&#x5DF1;&#x6E32;&#x67D3;&#x89C6;&#x9891;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06; <code>TuyaSmartCloudManager</code>&#x7684;<code>autoRender</code>&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x4E3A;&#x201C;NO&#x201D;&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A;&#x201C;YES&#x201D;&#xFF09;&#xFF0C;&#x5E76;&#x5728;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;&#x4E2D;&#x83B7;&#x53D6;&#x89C6;&#x9891;&#x5E27;&#x7684;YUV&#x6570;&#x636E;&#x52A0;&#x4EE5;&#x6E32;&#x67D3;&#x3002;</p>
+<pre><code class="lang-objective-c">/**
+ &#x89C6;&#x9891;&#x5E27;&#x56DE;&#x8C03;&#x65B9;&#x6CD5;
+
+ @param cloudManager cloudManager
+ @param frameBuffer &#x89C6;&#x9891;&#x5E27;YUV&#x6570;&#x636E;
+ @param frameInfo &#x89C6;&#x9891;&#x5E27;&#x4FE1;&#x606F;
+ */
+- (void)cloudManager:(TuyaSmartCloudManager *)cloudManager didReceivedFrame:(CMSampleBufferRef)frameBuffer videoFrameInfo:(TuyaSmartVideoFrameInfo)frameInfo;
+</code></pre>
+<p>&#x7ED3;&#x6784;&#x4F53;<code>TuyaSmartVideoFrameInfo</code>&#x7684;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-objective-c">typedef struct {
+    int nWidth;        // &#x89C6;&#x9891;&#x56FE;&#x50CF;&#x5BBD;&#x5EA6;
+    int nHeight;    // &#x89C6;&#x9891;&#x56FE;&#x50CF;&#x9AD8;&#x5EA6;
+
+    int nFrameRate;    // &#x5E27;&#x7387;
+    unsigned long long nTimeStamp;    // &#x65F6;&#x95F4;&#x6233;
+    unsigned long long nDuration;    // &#x4E0E;&#x4E91;&#x5B58;&#x50A8;&#x65E0;&#x5173;&#xFF0C;&#x53EF;&#x5FFD;&#x7565;
+    unsigned long long nProgress;   // &#x4E0E;&#x4E91;&#x5B58;&#x50A8;&#x65E0;&#x5173;&#xFF0C;&#x53EF;&#x5FFD;&#x7565;
+} TuyaSmartVideoFrameInfo;
+</code></pre>
+<h3 id="&#x52A0;&#x8F7D;&#x4E91;&#x5B58;&#x50A8;&#x6570;&#x636E;">&#x52A0;&#x8F7D;&#x4E91;&#x5B58;&#x50A8;&#x6570;&#x636E;</h3>
+<pre><code class="lang-objective-c">/**
+&#x52A0;&#x8F7D;&#x4E91;&#x5B58;&#x50A8;&#x6570;&#x636E;
+ @param complete callback
+ */
+- (void)loadCloudData:(void(^)(TuyaSmartCloudState state))complete;
+</code></pre>
+<p>&#x5728;&#x4F7F;&#x7528;&#x4E91;&#x5B58;&#x50A8;&#x64AD;&#x653E;&#x529F;&#x80FD;&#x524D;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x5148;&#x52A0;&#x8F7D;&#x4E91;&#x5B58;&#x50A8;&#x7684;&#x76F8;&#x5173;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x4F1A;&#x8FD4;&#x56DE;&#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#x5F53;&#x524D;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x4EE5;&#x53CA;&#x52A0;&#x8F7D;&#x5BF9;&#x5E94;&#x7684;&#x52A0;&#x5BC6;&#x79D8;&#x94A5;&#xFF0C;&#x9274;&#x6743;&#x4FE1;&#x606F;&#x7B49;&#x3002;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-objective-c">- (void)loadData {
+    __weak typeof(self) weakSelf = self;
+    [self.cloudManager loadCloudData:^(TuyaSmartCloudState state) {
+        weak_self.cloudStorageDays = weak_self.cloudManager.cloudDays;
+        weak_self.selectedDay = weak_self.cloudManager.cloudDays.lastObject;
+        [weakSelf checkCloudState:state];
+    }];
+}
+</code></pre>
+<h3 id="&#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#x72B6;&#x6001;">&#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#x72B6;&#x6001;</h3>
+<pre><code>typedef NS_ENUM(NSUInteger, TuyaSmartCloudState) {
+    TuyaSmartCloudStateNoService,       // &#x672A;&#x5F00;&#x901A;&#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;
+    TuyaSmartCloudStateNoData,          // &#x5DF2;&#x5F00;&#x901A;&#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x56DE;&#x653E;&#x89C6;&#x9891;
+    TuyaSmartCloudStateValidData,       // &#x5DF2;&#x5F00;&#x901A;&#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#xFF0C;&#x4E14;&#x6709;&#x56DE;&#x653E;&#x89C6;&#x9891;
+    TuyaSmartCloudStateExpiredNoData,   // &#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#x5DF2;&#x8FC7;&#x671F;&#xFF0C;&#x4E14;&#x65E0;&#x56DE;&#x653E;&#x89C6;&#x9891;
+    TuyaSmartCloudStateExpiredData,     // &#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#x5DF2;&#x8FC7;&#x671F;&#xFF0C;&#x4F46;&#x662F;&#x8FD8;&#x6709;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x7684;&#x56DE;&#x653E;&#x89C6;&#x9891;
+    TuyaSmartCloudStateLoadFailed       // &#x52A0;&#x8F7D;&#x5931;&#x8D25;
+};
+</code></pre><p>&#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#x8FC7;&#x671F;&#x540E;&#xFF0C;&#x5DF2;&#x4E0A;&#x4F20;&#x7684;&#x4E91;&#x5B58;&#x50A8;&#x89C6;&#x9891;&#x8FD8;&#x4F1A;&#x9884;&#x7559;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#xFF08;&#x901A;&#x5E38;&#x662F;7&#x5929;&#xFF0C;&#x5177;&#x4F53;&#x770B;&#x4E91;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#x534F;&#x8BAE;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x6B64;&#x671F;&#x95F4;&#x6CA1;&#x6709;&#x7EED;&#x8D39;&#xFF0C;&#x5230;&#x671F;&#x540E;&#xFF0C;&#x4E91;&#x5B58;&#x50A8;&#x89C6;&#x9891;&#x5C06;&#x4F1A;&#x5220;&#x9664;&#x3002;</p>
+<h3 id="&#x4E91;&#x5B58;&#x50A8;&#x5F55;&#x50CF;&#x65E5;&#x671F;">&#x4E91;&#x5B58;&#x50A8;&#x5F55;&#x50CF;&#x65E5;&#x671F;</h3>
+<p>&#x5728;&#x52A0;&#x8F7D;&#x4E91;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x6210;&#x529F;&#x8FD4;&#x56DE;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x4E91;&#x7AEF;&#x6709;&#x89C6;&#x9891;&#x56DE;&#x653E;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>cloudDays</code> &#x5C5E;&#x6027;&#x83B7;&#x53D6;&#x6709;&#x89C6;&#x9891;&#x56DE;&#x653E;&#x6570;&#x636E;&#x7684;&#x65E5;&#x671F;&#x3002;</p>
+<pre><code class="lang-objective-c">@property (nonatomic, strong, readonly) NSArray&lt;TuyaSmartCloudDayModel *&gt; *cloudDays;
+</code></pre>
+<pre><code class="lang-TuyaSmartCloudDayModel```&#x7684;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;">
+```objective-c
+@interface TuyaSmartCloudDayModel : NSObject
+
+// &#x89C6;&#x9891;&#x603B;&#x957F;&#x5EA6;&#xFF0C;&#x5355;&#x4F4D;&#x79D2;
+@property (nonatomic, assign) NSInteger sumDuration;
+
+// &#x65E5;&#x671F;, yyyy-MM-dd
+@property (nonatomic, strong) NSString *uploadDay;
+
+// &#x5F53;&#x5929; 00:00:00 &#x7684; Unix &#x65F6;&#x95F4;&#x6233;
+@property (nonatomic, assign) NSInteger startTime;
+
+// &#x5F53;&#x5929; 23:59:59 &#x7684; Unix &#x65F6;&#x95F4;&#x6233;
+@property (nonatomic, assign) NSInteger endTime;
+
+@end
+</code></pre>
+<h3 id="&#x65F6;&#x95F4;&#x7247;&#x6BB5;&#x6570;&#x636E;">&#x65F6;&#x95F4;&#x7247;&#x6BB5;&#x6570;&#x636E;</h3>
+<p>&#x5728;&#x64AD;&#x653E;&#x4E91;&#x5B58;&#x50A8;&#x65F6;&#x95F4;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x5230;&#x5F53;&#x5929;&#x7684;&#x89C6;&#x9891;&#x7247;&#x6BB5;&#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-objective-c">/**
+ &#x83B7;&#x53D6;&#x67D0;&#x5929;&#x7684;&#x89C6;&#x9891;&#x7247;&#x6BB5;&#x65F6;&#x95F4;
+ @param cloudDay &#x65E5;&#x671F;
+ @param success success callback
+ @param failure failure callback
+ */
+- (void)timeLineWithCloudDay:(TuyaSmartCloudDayModel *)cloudDay
+                     success:(void(^)(NSArray&lt;TuyaSmartCloudTimePieceModel *&gt; * timePieces))success
+                     failure:(void(^)(NSError * error))failure;
+</code></pre>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-objective-c">- (void)requestTimelineData {
+    [self.cloudManager timeLineWithCloudDay:self.selectedDay success:^(NSArray&lt;TuyaSmartCloudTimePieceModel *&gt; *timePieces) {
+        // success
+    } failure:^(NSError *error) {
+        // failed
+    }];
+}
+</code></pre>
+<pre><code class="lang-TuyaSmartCloudTimePieceModel```&#x7C7B;&#x5B9A;&#x4E49;&#x89C6;&#x9891;&#x7247;&#x6BB5;&#x5F00;&#x59CB;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#x76F8;&#x5173;&#x7684;&#x4FE1;&#x606F;&#x3002;">
+```objective-c
+@interface TuyaSmartCloudTimePieceModel : NSObject
+
+// &#x89C6;&#x9891;&#x5F00;&#x59CB;&#x65F6;&#x95F4; Unix &#x65F6;&#x95F4;&#x6233;
+@property (nonatomic, assign) NSInteger startTime;
+
+// &#x89C6;&#x9891;&#x5F00;&#x59CB;&#x65F6;&#x95F4; NSDate
+@property (nonatomic, strong) NSDate *startDate;
+
+// &#x89C6;&#x9891;&#x7ED3;&#x675F;&#x65F6;&#x95F4; Unix &#x65F6;&#x95F4;&#x6233;
+@property (nonatomic, assign) NSInteger endTime;
+
+// &#x89C6;&#x9891;&#x7ED3;&#x675F;&#x65F6;&#x95F4; NSDate
+@property (nonatomic, strong) NSDate *endDate;
+
+@end
+</code></pre>
+<h3 id="&#x62A5;&#x8B66;&#x4E8B;&#x4EF6;">&#x62A5;&#x8B66;&#x4E8B;&#x4EF6;</h3>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x63A5;&#x53E3;&#x83B7;&#x53D6;&#x89E6;&#x53D1;&#x89C6;&#x9891;&#x5F55;&#x5236;&#x7684;&#x62A5;&#x8B66;&#x4E8B;&#x4EF6;&#x5217;&#x8868;&#x3002;</p>
+<pre><code class="lang-objective-c">/**
+ &#x83B7;&#x53D6;&#x67D0;&#x5929;&#x7684;&#x62A5;&#x8B66;&#x4E8B;&#x4EF6;
+ @param &#x65E5;&#x671F;
+ @param offset &#x504F;&#x79FB;&#xFF0C;0 &#x8868;&#x793A;&#x4ECE;&#x7B2C;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x5F00;&#x59CB;
+ @param limit  &#x6570;&#x91CF;&#x9650;&#x5236;&#xFF0C;-1 &#x8868;&#x793A;&#x83B7;&#x53D6;&#x6240;&#x6709;&#x4E8B;&#x4EF6;
+ @param success success callback
+ @param failure failure callback
+ */
+- (void)timeEventsWithCloudDay:(TuyaSmartCloudDayModel *)cloudDay
+                        offset:(int)offset
+                         limit:(int)limit
+                       success:(void(^)(NSArray&lt;TuyaSmartCloudTimeEventModel *&gt; * timeEvents))success
+                       failure:(void(^)(NSError * error))failure;
+</code></pre>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-objective-c">- (void)requestEventList {
+    [self.cloudManager timeEventsWithCloudDay:self.selectedDay offset:0 limit:-1 success:^(NSArray&lt;TuyaSmartCloudTimeEventModel *&gt; *timeEvents) {
+        // success
+    } failure:^(NSError *error) {
+        // failed
+    }];
+}
+</code></pre>
+<pre><code class="lang-TuyaSmartCloudTimeEventModel```&#x5B9A;&#x4E49;&#x65F6;&#x95F4;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;">
+
+</code></pre>
+<p>@interface TuyaSmartCloudTimeEventModel : NSObject</p>
+<p>// &#x4E8B;&#x4EF6;&#x63CF;&#x8FF0;
+@property (nonatomic, strong) NSString *describe;</p>
+<p>// &#x4E8B;&#x4EF6;&#x5F00;&#x59CB;&#x65F6;&#x95F4; Unix &#x65F6;&#x95F4;&#x6233;
+@property (nonatomic, assign) NSInteger startTime;</p>
+<p>// &#x4E8B;&#x4EF6;&#x7ED3;&#x675F;&#x65F6;&#x95F4; Unix &#x65F6;&#x95F4;&#x6233;
+@property (nonatomic, assign) NSInteger endTime;</p>
+<p>// &#x7F29;&#x7565;&#x56FE;
+@property (nonatomic, strong) NSString *snapshotUrl;</p>
+<p>@end</p>
+<pre><code>
+### &#x4E91;&#x5B58;&#x50A8;&#x89C6;&#x9891;&#x64AD;&#x653E;
+
+&#x64AD;&#x653E;&#x4E91;&#x5B58;&#x50A8;&#x89C6;&#x9891;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x5F00;&#x59CB;&#x64AD;&#x653E;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#xFF0C;&#x548C;&#x662F;&#x5426;&#x662F;&#x64AD;&#x653E;&#x4E8B;&#x4EF6;&#x3002;&#x63A5;&#x53E3;&#x5B9A;&#x4E49;&#xFF1A;
+
+```objective-c
+/**
+ &#x64AD;&#x653E;&#x4E91;&#x5B58;&#x50A8;&#x89C6;&#x9891;
+
+ @param startTime &#x5F00;&#x59CB;&#x64AD;&#x653E;&#x65F6;&#x95F4;
+ @param endTime &#x7ED3;&#x675F;&#x65F6;&#x95F4;&#xFF0C;&#x4E91;&#x5B58;&#x50A8;&#x89C6;&#x9891;&#x64AD;&#x653E;&#x4F1A;&#x81EA;&#x52A8;&#x8FDE;&#x7EED;&#x64AD;&#x653E;&#x5230;&#x5F53;&#x5929;&#x6240;&#x6709;&#x89C6;&#x9891;&#x7ED3;&#x675F;
+ @param isEvent &#x662F;&#x5426;&#x662F;&#x4E8B;&#x4EF6;
+ @param responseCallback errCode 0 &#x8868;&#x793A;&#x6210;&#x529F;&#xFF0C;&#x8D1F;&#x6570;&#x8868;&#x793A;&#x5931;&#x8D25;
+ @param finishedCallback &#x89C6;&#x9891;&#x64AD;&#x653E;&#x7ED3;&#x675F;
+ */
+- (void)playCloudVideoWithStartTime:(long)startTime
+                            endTime:(long)endTime
+                            isEvent:(BOOL)isEvent
+                         onResponse:(void(^)(int errCode))responseCallback
+                         onFinished:(void(^)(int errCode))finishedCallback;
+</code></pre><p>&#x5982;&#x679C;&#x662F;&#x76F4;&#x63A5;&#x64AD;&#x653E;&#x67D0;&#x4E2A;&#x89C6;&#x9891;&#x7247;&#x6BB5;&#xFF08;TuyaSmartCloudTimePieceModel&#xFF09;&#xFF0C;&#x5F00;&#x59CB;&#x65F6;&#x95F4;&#x4F20;&#x5165; TuyaSmartCloudTimePieceModel &#x4E2D;&#x4ECB;&#x4E8E; startTime &#x548C; endTime &#x4E4B;&#x95F4;&#x7684;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x6233;&#xFF0C; isEvent &#x4F20;&#x5165; NO&#x3002;&#x5982;&#x679C;&#x662F;&#x60F3;&#x8981;&#x64AD;&#x653E;&#x67D0;&#x4E2A;&#x4E8B;&#x4EF6;&#xFF08;TuyaSmartCloudTimeEventModel&#xFF09;&#xFF0C;&#x5F00;&#x59CB;&#x65F6;&#x95F4;&#x4F20;&#x5165; TuyaSmartCloudTimeEventModel &#x4E2D;&#x7684; startTime &#xFF0C;isEvent &#x4F20;&#x5165;YES&#xFF0C;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x5F53;&#x5929;&#x7684;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#xFF0C;&#x4E5F;&#x5C31;&#x662F; TuyaSmartCloudDayModel &#x7684; endTime,&#x3002;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-objective-c">-(void)playVideo:(TuyaSmartCloudTimePieceModel *)timePiece {
+    [self.cloudManager playCloudVideoWithStartTime:timePiece.startTime endTime:self.selectedDay.endTime isEvent:NO onResponse:^(int errCode) {
+            if (errCode == 0) {
+                // success
+            }else {
+                // failed
+            }
+        } onFinished:^(int errCode) {
+            // finished
+            if (errCode != 0) {
+                // some error
+            }
+        }];
+}
+
+- (void)playEvent:(TuyaSmartCloudTimeEventModel *)event {
+    [self.cloudManager playCloudVideoWithStartTime:event.startTime endTime:self.selectedDay.endTime isEvent:YES onResponse:^(int errCode) {
+            if (errCode == 0) {
+                // success
+            }else {
+                // failed
+            }
+        } onFinished:^(int errCode) {
+            // finished
+            if (errCode != 0) {
+                // some error
+            }
+        }];
+}
+</code></pre>
+<h3 id="&#x6682;&#x505C;">&#x6682;&#x505C;</h3>
+<pre><code class="lang-objective-c">/**
+ &#x6682;&#x505C;
+
+ @return errCode &#x9519;&#x8BEF;&#x7801;&#xFF0C;0 &#x8868;&#x793A;&#x6210;&#x529F;
+ */
+- (int)pausePlayCloudVideo;
+</code></pre>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-objective-c">- (void)pause {
+    if ([self.cloudManager pausePlayCloudVideo] != 0) {
+        // &#x6682;&#x505C;&#x5931;&#x8D25;
+    }
+}
+</code></pre>
+<h3 id="&#x7EE7;&#x7EED;&#x64AD;&#x653E;">&#x7EE7;&#x7EED;&#x64AD;&#x653E;</h3>
+<pre><code class="lang-objective-c">/**
+ &#x6062;&#x590D;&#x64AD;&#x653E;
+
+ @return errCode &#x9519;&#x8BEF;&#x7801;&#xFF0C;0 &#x8868;&#x793A;&#x6210;&#x529F;
+ */
+- (int)resumePlayCloudVideo;
+</code></pre>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-objective-c">- (void)resume {
+    if ([self.cloudManager resumePlayCloudVideo] != 0) {
+        // &#x6062;&#x590D;&#x64AD;&#x653E;&#x5931;&#x8D25;
+    }
+}
+</code></pre>
+<h3 id="&#x505C;&#x6B62;&#x64AD;&#x653E;">&#x505C;&#x6B62;&#x64AD;&#x653E;</h3>
+<pre><code class="lang-objective-c">/**
+ &#x505C;&#x6B62;&#x64AD;&#x653E;
+
+ @return errCode &#x9519;&#x8BEF;&#x7801;&#xFF0C;0 &#x8868;&#x793A;&#x6210;&#x529F;
+ */
+- (int)stopPlayCloudVideo;
+</code></pre>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-objective-c">- (void)stop {
+    if ([self.cloudManager stopPlayCloudVideo] != 0) {
+        // &#x505C;&#x6B62;&#x64AD;&#x653E;&#x5931;&#x8D25;
+    }
+}
+</code></pre>
+<h3 id="&#x58F0;&#x97F3;&#x5F00;&#x5173;">&#x58F0;&#x97F3;&#x5F00;&#x5173;</h3>
+<pre><code class="lang-objective-c">/**
+ &#x8BBE;&#x7F6E;&#x9759;&#x97F3;&#x72B6;&#x6001;.
+ @param mute &#x9759;&#x97F3;
+ @param success success call back.
+ @param failure failed call back.
+ */
+- (void)enableMute:(BOOL)mute success:(void(^)(void))success failure:(void (^)(NSError * error))failure;
+
+/**
+ &#x83B7;&#x53D6;&#x9759;&#x97F3;&#x72B6;&#x6001;
+ @return BOOL &#x662F;&#x5426;&#x9759;&#x97F3;
+ */
+- (BOOL)isMuted;
+</code></pre>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-objective-c">- (void)muteAction {
+    BOOL isMuted = [self.cloudManger isMuted];
+    [self.cloudManager enableMute:!isMuted success:^{
+        // success
+    } failure:^(NSError *error) {
+        // failed
+    }];
+}
+</code></pre>
+<h3 id="&#x5F55;&#x5236;&#x89C6;&#x9891;">&#x5F55;&#x5236;&#x89C6;&#x9891;</h3>
+<pre><code class="lang-objective-c">/**
+ start record.
+ */
+- (void)startRecord;
+
+/**
+ stop record. video will save to photo album. photo asset collection name is bundle name, &quot;[NSBundle mainBundle].infoDictionary[(__bridge NSString *)kCFBundleNameKey]&quot;.
+ @return error code. return 0 as record success.
+ */
+- (int)stopRecord;
+</code></pre>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-objective-c">// self.isRecording = NO;
+
+- (void)recordAction {
+    if (self.isRecording) {
+        if ([self.cloudManager stopRecord] != 0) {
+            // &#x5F55;&#x5236;&#x5931;&#x8D25;
+        }else {
+            // &#x5F55;&#x5236;&#x6210;&#x529F;&#xFF0C;&#x89C6;&#x9891;&#x5DF2;&#x4FDD;&#x5B58;&#x5230;&#x7CFB;&#x7EDF;&#x76F8;&#x518C;
+        }
+    }else {
+        [self.cloudManager startRecord];
+        self.isRecording = YES;
+    }
+}
+</code></pre>
+<h3 id="&#x622A;&#x56FE;">&#x622A;&#x56FE;</h3>
+<pre><code class="lang-objective-c">/**
+ get a screenshot of th video and save it to photo album. photo asset collection name is bundle name, &quot;[NSBundle mainBundle].infoDictionary[(__bridge NSString *)kCFBundleNameKey]&quot;.
+ */
+- (UIImage *)snapShoot;
+</code></pre>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-objective-c">- (void)snapShoot {
+    if ([self.cloudManager snapShoot]) {
+        // &#x56FE;&#x7247;&#x5DF2;&#x4FDD;&#x5B58;&#x5230;&#x7CFB;&#x7EDF;&#x76F8;&#x518C;
+    }else {
+        // &#x622A;&#x56FE;&#x5931;&#x8D25;
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="qrcode_network_configuration.html" class="navigation navigation-prev " aria-label="Previous page: 二维码配网">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="version_record.html" class="navigation navigation-next " aria-label="Next page: 版本记录">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"云存储","level":"1.10","depth":1,"next":{"title":"版本记录","level":"1.11","depth":1,"path":"resource/version_record.md","ref":"resource/version_record.md","articles":[]},"previous":{"title":"二维码配网","level":"1.9","depth":1,"path":"resource/qrcode_network_configuration.md","ref":"resource/qrcode_network_configuration.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/CloudStorage.md","mtime":"2019-08-05T12:24:13.501Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-05T12:25:07.726Z"},"basePath":"..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
